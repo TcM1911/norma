@@ -1,0 +1,143 @@
+body {
+	color: black;
+	background-image: url("../img/ZenBG.png");
+}
+@font-face {
+	font-family: 'AquilineTwo';
+	src: url('../fonts/aquilinetwo-webfont.eot');
+	src: url('../fonts/aquilinetwo-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/aquilinetwo-webfont.woff') format('woff'), url('../fonts/AquilineTwo.ttf') format('truetype'), url('../fonts/aquilinetwo-webfont.svg#frenchyregularr') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+#foot-spacer {
+	width: 100%;
+	height: 20px
+}
+.carousel-control {
+	background-image: none;
+}
+a.left.carousel-control {
+	background-image: none;
+}
+a.right.carousel-control {
+	background-image: none;
+}
+#right-col {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+div.item> a> img {
+	width: 300px;
+	height: 448px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header-icons a img {
+	display: inline-block;
+}
+.header-icons {
+	text-align: center;
+}
+img#celticKnot {
+	margin-left: auto;
+	margin-right: auto;
+}
+#banner-logs {
+	margin-top: auto;
+	padding-top: 1em;
+}
+.specialFont {
+	font-family: AquilineTwo;
+}
+.MainSite {
+	background-color: #efefef;
+	padding: 1em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+.MainSite> p {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.navbar-default {
+	background-color: rgba(0, 0, 0, .4);
+	background-image: none;
+	border: 1px solid #888;
+}
+li.active {
+	rgba(0, 0, 0, .4);
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+	background-color: rgba(0, 0, 0, .000001);
+	background-image: none;
+	color: #b4b4b4;
+}
+#titleSpace {
+	text-align: center;
+}
+#title {
+	padding-bottom: 15px;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+	background-color: rgba(0, 0, 0, 0.0001);
+}
+.dropdown-menu,
+open {
+	background-color: rgba(163, 163, 163, 0.95);
+}
+.dropdown-menu > li > a {
+	color: black;
+}
+/*#body-left> h2,
+#body-left> h3 {
+	padding-left: 3em;
+	padding-right: 3em;
+}*/
+
+#body-right {
+	text-align: center;
+}
+#body-left {
+	padding-top: 2em;
+}
+#body-right {
+	padding-top: 2em;
+}
+#profilePic {
+	padding-bottom: 2em;
+}
+#bookCovers> a> img {
+	display: inline-block;
+}
+.mainpageCoverArt {
+	padding: 2em;
+	width: 300px;
+}
+.mainSiteP {
+	font-size: 16px;
+	padding-top: 2em;
+}
+#getBookIcons {
+	text-align: center;
+}
+#getBookIcons>a>img {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#formWrapper {
+	margin-top: 2em;
+}
+.coverImage {
+	padding-top: 1em;
+}
+img.shoppingIcons {
+	width: 120px;
+	padding: 5px;
+}
+.partnerLogo {
+	margin-top: 2em;
+}
