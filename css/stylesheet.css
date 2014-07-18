@@ -108,7 +108,8 @@ open {
 	padding-top: 2em;
 }
 #profilePic {
-	padding-bottom: 2em;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
 #bookCovers> a> img {
 	display: inline-block;
