@@ -13,5 +13,6 @@ require.config({
 require([
 	'app',
 ], function(App) {
+	// Start the backbone app.
 	App.initialize();
 });
