@@ -15,12 +15,11 @@ define([
 		// Url routes
 		routes: {
 			'': 'showIndex',
-			'/': 'showIndex',
-			'/about': 'showAbout',
-			'/books': 'showBooks',
-			'/book': 'showBook',
-			'/contact': 'showContact',
-			'/partner': 'showPartner'
+			'about': 'showAbout',
+			'books': 'showBooks',
+			'book': 'showBook',
+			'contact': 'showContact',
+			'partner': 'showPartner'
 		};
 	});
 
