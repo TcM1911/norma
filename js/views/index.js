@@ -9,11 +9,9 @@ define([
 		render: function () {
 			// Data for _ template
 			var data = {};
-			console.log(indexTemplate);
 			var compiledTemplate = _.template(indexTemplate, data);
 			// Send template to the page
 			this.$el.html(compiledTemplate);
-			console.log('Render index.html');
 		}
 	});
 	return IndexView;

@@ -4,13 +4,14 @@ define([
 'jquery',
 'underscore', // lib/underscore/underscore
 'backbone', // lib/backbone/backbone
+'views/menu',
 'views/about',
 'views/index',
 'views/books',
 'views/book',
 'views/contact',
 'views/partner'
-], function ($, _, Backbone, AboutView, IndexView, BooksView, BookView, ContactView, PartnerView) {
+], function ($, _, Backbone, MenuView, AboutView, IndexView, BooksView, BookView, ContactView, PartnerView) {
 	// Backbone router
 	var AppRouter = Backbone.Router.extend({
 		// Url routes
@@ -52,7 +53,10 @@ define([
 		var appRouter = new AppRouter;
 		console.log("Router started");
 		Backbone.history.start(); // Remember the page history for the web browser.
-		// What we return here will be used by other modules
+		// Render the menu bar.
+		var menuView = new MenuView;
+		menuView.render();
+
 	}
 	return {init: init};
 });

@@ -9,7 +9,6 @@ define([
 	var init = function() {
 		// Start listening for routes.
 		console.log("Initialize the router");
-//		console(router);
 		router.init();
 	};
 	return {
