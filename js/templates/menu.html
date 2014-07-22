@@ -43,3 +43,14 @@
 	</div>
 	<!-- /.container-fluid -->
 </nav>
+<script type="text/javascript">
+	$(document).ready(function () {
+		console.log("Mouse over function loaded");
+		$('.dropdown-mouseover').mouseover(function () {
+			$('.dropdown').addClass("open");
+		});
+		$('.dropdown-mouseover').mouseleave(function () {
+			$('.dropdown').removeClass("open");
+		});
+	});
+</script>

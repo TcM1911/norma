@@ -10,8 +10,9 @@ define([
 'views/books',
 'views/book',
 'views/contact',
-'views/partner'
-], function ($, _, Backbone, MenuView, AboutView, IndexView, BooksView, BookView, ContactView, PartnerView) {
+'views/partner',
+'views/mailinglist'
+], function ($, _, Backbone, MenuView, AboutView, IndexView, BooksView, BookView, ContactView, PartnerView, MailinglistView) {
 	// Backbone router
 	var menuView = new MenuView;
 	var AppRouter = Backbone.Router.extend({
@@ -63,6 +64,9 @@ define([
 		var menuView = new MenuView;
 		menuView.render();
 		menuView.activateItem('#Home')
+		// Render the mailinglist modal
+		var mailinglistView = new MailinglistView;
+		mailinglistView.render();
 	}
 	return {init: init};
 });
