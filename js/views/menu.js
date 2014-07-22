@@ -13,6 +13,11 @@ define([
 			var data = {};
 			var Template = _.template(MenuTemplate, data);
 			this.$el.html(Template);
+		},
+		activateItem: function(newElement) {
+			// Remove the old element
+			$('.menuItem').filter('.active').removeClass('active');
+			$(newElement).addClass('active');
 		}
 	});
 	return MenuView;

@@ -13,6 +13,7 @@ define([
 'views/partner'
 ], function ($, _, Backbone, MenuView, AboutView, IndexView, BooksView, BookView, ContactView, PartnerView) {
 	// Backbone router
+	var menuView = new MenuView;
 	var AppRouter = Backbone.Router.extend({
 		// Url routes
 		routes: {
@@ -26,14 +27,17 @@ define([
 		showIndex: function () {
 			var indexView = new IndexView();
 			indexView.render();
+			menuView.activateItem('#Home')
 		},
 		showAbout: function () {
 			var aboutView = new AboutView();
 			aboutView.render();
+			menuView.activateItem('#About');
 		},
 		showBooks: function () {
 			var booksView = new BooksView();
 			booksView.render();
+			menuView.activateItem('#Books');	
 		},
 		showBook: function () {
 			var bookView = new BookView();
@@ -42,10 +46,12 @@ define([
 		showContact: function () {
 			var contactView = new ContactView();
 			contactView.render();
+			menuView.activateItem('#Contact');
 		},
 		showPartner: function () {
 			var partnerView = new PartnerView();
 			partnerView.render();
+			menuView.activateItem('#Partners');
 		}
 
 	});
@@ -56,7 +62,7 @@ define([
 		// Render the menu bar.
 		var menuView = new MenuView;
 		menuView.render();
-
+		menuView.activateItem('#Home')
 	}
 	return {init: init};
 });
