@@ -40,9 +40,10 @@ define([
 			booksView.render();
 			menuView.activateItem('#Books');
 		},
-		showBook: function () {
+		showBook: function (id) {
 			var bookView = new BookView();
-			bookView.render();
+			bookView.render(id);
+			menuView.activateItem('#Books');
 		},
 		showContact: function () {
 			var contactView = new ContactView();
