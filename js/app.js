@@ -4,10 +4,10 @@ define([
 'jquery',
 'underscore',
 'backbone',
-'router' // router.js
+'router'
 ], function ($ , _, Backbone, router) {
 	var init = function() {
-		// Start listening for routes.
+	  // Start listening for routes.
 		console.log("Initialize the router");
 		router.init();
 	};

@@ -14,21 +14,21 @@ define([
 'views/mailinglist'
 ], function ($, _, Backbone, MenuView, AboutView, IndexView, BooksView, BookView, ContactView, PartnerView, MailinglistView) {
 	// Backbone router
-	var menuView = new MenuView;
+	var menuView = new MenuView();
 	var AppRouter = Backbone.Router.extend({
 		// Url routes
 		routes: {
 			"": "showIndex",
 			'about': 'showAbout',
 			'books': 'showBooks',
-			'book': 'showBook',
+			'book/:id': 'showBook',
 			'contact': 'showContact',
-			'partner': 'showPartner'	
+			'partner': 'showPartner'
 		},
 		showIndex: function () {
 			var indexView = new IndexView();
 			indexView.render();
-			menuView.activateItem('#Home')
+			menuView.activateItem('#Home');
 		},
 		showAbout: function () {
 			var aboutView = new AboutView();
@@ -38,7 +38,7 @@ define([
 		showBooks: function () {
 			var booksView = new BooksView();
 			booksView.render();
-			menuView.activateItem('#Books');	
+			menuView.activateItem('#Books');
 		},
 		showBook: function () {
 			var bookView = new BookView();
@@ -57,16 +57,16 @@ define([
 
 	});
 	var init = function () {
-		var appRouter = new AppRouter;
+		var appRouter = new AppRouter();
 		console.log("Router started");
 		Backbone.history.start(); // Remember the page history for the web browser.
 		// Render the menu bar.
-		var menuView = new MenuView;
+		var menuView = new MenuView();
 		menuView.render();
-		menuView.activateItem('#Home')
+		menuView.activateItem('#Home');
 		// Render the mailinglist modal
-		var mailinglistView = new MailinglistView;
+		var mailinglistView = new MailinglistView();
 		mailinglistView.render();
-	}
+	};
 	return {init: init};
 });
