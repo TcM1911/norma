@@ -1,0 +1,30 @@
+
+			<div class="col-sm-12">
+				<h2 class="specialFont text-center"><%= tagline %></h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<img class="center-block mainpageCoverArt img-responsive" src="<%= cover %>">
+				</div>
+				<div class="col-sm-6">
+					<%= body %>
+					<div id="getBookIcons">
+					<% if(azActive) {%>
+						<a href="<%=azLink%>" target="_blank">
+							<img src="img/amazon.jpg" class="shoppingIcons">
+						</a>
+						<%}%>
+						<% if(nookActive) {%>
+						<a href="<%=nookLink%>" target="_blank">
+							<img src="img/bn.jpg" class="shoppingIcons">
+						</a>
+						<%}%>
+						<% if(googleActive) {%>
+						<a href="<%=googleLink%>" target="_blank">
+							<img src="img/google-play.png" class="shoppingIcons">
+						</a>
+						<%}%>
+					</div>
+				</div>
+			</div>
+		
