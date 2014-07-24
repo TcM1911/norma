@@ -5,14 +5,29 @@ define([
 	'jquery',
 	'underscore',
 	'backbone',
-	'text!templates/books.html'
-], function ($, _, Backbone, BooksTemplate) {
+	'text!templates/books.html',
+	'collections/books'
+], function ($, _, Backbone, BooksTemplate, BookCollection) {
 	var BooksView = Backbone.View.extend({
 		el: $('#content'),
 		render: function() {
-			var data = {};
-			var Template = _.template(BooksTemplate, data);
-			this.$el.html(Template);
+		  var that = this;
+		  var books = new BookCollection();
+		  books.fetch({
+		    success: function(books) {
+		      // Get all cover links
+		      coverLinks = [];
+		      for (i=1; i <= books.length; i++) {
+		        var book = books.get(i);
+		        coverLinks[i-1] = book.get('cover');
+            // Making sure the page is rendered after the for loop.
+  		      if (i === books.length) {
+  		        var Template = _.template(BooksTemplate, coverLinks);
+    		    	that.$el.html(Template);
+  		      }
+		      }
+		    }
+		  });
 		}
 	});
 	return BooksView;
