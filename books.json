@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "published": true,
+    "title": "Blackness Takes Over",
+    "tagline": "She met him on Saturday, by Tuesday her life would never be the same...",
+    "cover": "../img/BlacknessTakesOver.jpg",
+    "body": "<p>Shannon Kelly’s life has been anything but typical. Her life has been altered viciously at the hands of others twice. However horrible they have been, it’s these changes that have given her a family and career…now possibly love. The last thirteen years she has been supported and loved by her protector, her entertainer, and her comforter, but never a lover.</p><p>When Dylan Kellerman enters Shannon’s life he changes its course in more ways than one. He gives her hope and promise of a future she was convinced wasn’t attainable. Just as she begins to believe she has finally turned her life into something she can build a future on…Blackness takes over.</p>",
+    "amazonLink": "http://www.amazon.com/dp/B00HNGH796",
+    "nookLink": "http://www.barnesandnoble.com/w/blackness-takes-over-norma-jeanne-karlsson/1117931241?ean=2940149018741",
+    "googlePlayLink": "https://play.google.com/store/books/details/Karlsson_Norma_Jeanne_Blackness_Takes_Over?id=NmSAAgAAQBAJ",
+    "amazonActive": true,
+    "nookActive": true,
+    "googleActive": true
+  },
+  {
+    "id": 2,
+    "published": true,
+    "title": "Blackness Awaits",
+    "tagline": "As he enters the room looking like death personified, lifeless and haunting, she knows...blackness awaits.",
+    "cover": "../img/BlacknessAwaits.jpg",
+    "body": "<p>Shannon Kelly has been ripped from her home, her family, her love and her safety. Lucky for her she’s a fighter. She’s at her best when she’s faced with a crisis. Unfortunately, she finds herself battling to stay alive against an opponent she doesn’t know how to combat…her past. Learning of betrayal and deceit, Shannon is confronted with demons and memories long forgotten. This is the war of her life, battlefields littered in pain. She must be victorious no matter the bloodshed. The people that love Shannon are in a desperate battle. The center of their world, the peace within them, is gone. While they frantically search for her they face their own struggles and internal strife, forcing them to turn to unconventional means to retrieve the best part of each of them. If they can’t find Shannon and she can’t save herself…a blackness awaits this family that none of them will survive.</p>",
+    "amazonLink": "http://www.amazon.com/dp/B00JNBX36K",
+    "nookLink": "http://www.barnesandnoble.com/w/blackness-awaits-norma-jeanne-karlsson/1119209449?ean=2940149546442",
+    "googlePlayLink": "https://play.google.com/store/books/details/Karlsson_Norma_Jeanne_Blackness_Awaits?id=K7FYAwAAQBAJ",
+    "amazonActive": true,
+    "nookActive": true,
+    "googleActive": true
+  }
+]

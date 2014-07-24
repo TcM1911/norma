@@ -1,0 +1,56 @@
+<div class="row">
+	<div class="col-sm-6" id="left-col">
+		<h2 class="text-center">Norma Jeanne Karlsson</h2>
+		<h3 class="text-center">Author of The Blackness Series</h3>
+		<span id="bodyText"><p>“A testament to the strength of those who persevere when all appears to be lost, Blackness Takes Over will surely generate much interest and rightly mark Karlsson as an author to watch. Strongly recommended.” - Book Viral</p>
+
+		<p>“What a book! Drama, mystery, romance and suspense all rolled up in one package.” -Indie Author Anonymous</p>
+
+		<p>“A truly wonderful story packed full of romance, love and plenty of suspense.” - Literary Nook</p>
+
+		<p>“5 out of 5 Stars but I would give more if I could!”- Racing to Read</p>
+
+		<p>“This whole story is so amazing, I feel a complete contentment on discovering this amazing read. It's one of those stories that stays with you WAY after it has ended.” - Insane About Books</p></span>
+	</div>
+	<div class="col-sm-6" id="right-col">
+
+		<!-- Carouselle-->
+		<div id="carousel-front-page" class="carousel slide" data-ride="carousel">
+			 <!--Indicators -->
+			<ol class="carousel-indicators">
+			  <% for (i=0; i<coverLinks.length; i++) { %>
+			    <% if (i === 0) { %>
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				  <% } else { %>
+				<li data-target="#carousel-example-generic" data-slide-to="<%=i%>"></li>
+				  <% } } %>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+        
+      <% for (i=coverLinks.length - 1; i >= 0; i = i - 1) { %>
+				<% if (i === coverLinks.length - 1) { %>
+				  <div class="item active">
+				<% } else { %>
+				  <div class="item">
+				<% } %>
+					<a href="#book/<%= i + 1 %>">
+						<img src="<%= coverLinks[i] %>">
+					</a>
+				</div>
+			<% } %>
+			</div>
+			
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-front-page" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-front-page" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+		<!-- Carouselle end -->
+	</div>
+</div>

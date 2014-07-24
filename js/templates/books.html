@@ -1,0 +1,38 @@
+	<h1 class="text-center">The Blackness Series</h1>
+<span id="bodyText">
+<p>Welcome to the world Norma Jeanne has created. What began as an homage to her home town by a homesick Midwestern girl, unfolded a series of love, danger, humor and trust. <em>The Blackness Series</em> takes place in various locations, but mostly focuses on Chicago and Kansas City. As the series progresses, you will meet and fall in love with a cast of charismatic and intriguing characters who live to the fullest and love hard.</p>
+<p>The series is dark, beguiling and full of suspense at every turn with love and relationships forming the foundations that allow the characters to persevere. Emotional roller coasters throughout the saga allow readers to laugh out loud, cheer at the top of their lungs, cry tears of sorrow and exhale in relief.</p>
+</span>
+<div class="center-block row" id="bookCovers">
+	  <% for (i=0; i<coverLinks.length; i++){ %>
+	  
+	  <% if (coverLinks.length === 1) { %>
+	  <div class="col-sm-12">
+	  <% } else if (coverLinks.length % 2 === 0 || coverLinks.length % 3 === 0 ) { %>
+         <%if (coverLinks.length % 3 === 0) {%>
+	    <div class="col-sm-4">
+	   <%} else {%>
+	    <div class="col-sm-6">
+	    <% }%>
+
+	  <% } else { %>
+      <%if (coverLinks.length % 3 === 2) {%>
+	     <%if (i + 1 <= coverLinks.length - 2) {%>
+	      <div class="col-sm-4">
+	      <%} else {%>
+	      <div class="col-sm-6">
+	      <%}%>
+	      <%} else {%>
+	     <%if (i + 1 <= coverLinks.length - 1) {%>
+	      <div class="col-sm-6">
+	     <%} else {%>
+	      <div class="col-sm-12">'
+	     <%}%>
+	    <%}%>
+	  <% } %>
+		<a href="#book/<%= i+1 %>">
+			<img class="img-responsive center-block coverImage" src="<%=coverLinks[i]%>">
+		</a>
+	</div>
+ <%}%>
+</div>
