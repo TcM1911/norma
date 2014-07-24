@@ -16,35 +16,32 @@
 
 		<!-- Carouselle-->
 		<div id="carousel-front-page" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
+			 <!--Indicators -->
 			<ol class="carousel-indicators">
+			  <% for (i=0; i<coverLinks.length; i++) { %>
+			    <% if (i === 0) { %>
 				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  <% } else { %>
+				<li data-target="#carousel-example-generic" data-slide-to="<%=i%>"></li>
+				  <% } } %>
 			</ol>
 
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
-
-				<div class="item">
-					<a href="Blackness-Takes-Over.html">
-						<img src="img/BlacknessTakesOver.jpg">
+        
+      <% for (i=coverLinks.length - 1; i >= 0; i = i - 1) { %>
+				<% if (i === coverLinks.length - 1) { %>
+				  <div class="item active">
+				<% } else { %>
+				  <div class="item">
+				<% } %>
+					<a href="#book/<%= i + 1 %>">
+						<img src="<%= coverLinks[i] %>">
 					</a>
 				</div>
-
-				<div class="item">
-					<a href="Blackness-Awaits.html">
-						<img src="img/BlacknessAwaits.jpg">
-					</a>
-				</div>
-
-				<div class="item active">
-					<a href="Shrouded-in-Blackness.html">
-						<img src="img/ShroudedinBlankness.jpg">
-					</a>
-				</div>
-
+			<% } %>
 			</div>
+			
 
 			<!-- Controls -->
 			<a class="left carousel-control" href="#carousel-front-page" role="button" data-slide="prev">
