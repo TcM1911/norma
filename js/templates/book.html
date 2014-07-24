@@ -3,11 +3,13 @@
 				<h2 class="specialFont text-center"><%= tagline %></h2>
 			</div>
 			<div class="row">
+			  <!--<div class="col-sm-1"></div>-->
 				<div class="col-sm-6">
 					<img class="center-block mainpageCoverArt img-responsive" src="<%= cover %>">
 				</div>
+				
 				<div class="col-sm-6">
-					<%= body %>
+					<span id="bodyText"> <%= body %> </span>
 					<div id="getBookIcons">
 					<% if(azActive) {%>
 						<a href="<%=azLink%>" target="_blank">
@@ -26,5 +28,6 @@
 						<%}%>
 					</div>
 				</div>
+				<!--<div class="col-sm-1"></div>-->
 			</div>
 		

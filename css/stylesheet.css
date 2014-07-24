@@ -1,6 +1,7 @@
 body {
 	color: black;
 	background-image: url("../img/ZenBG.png");
+	
 }
 @font-face {
 	font-family: 'AquilineTwo';
@@ -117,10 +118,6 @@ open {
 	padding: 2em;
 	width: 300px;
 }
-.mainSiteP {
-	font-size: 16px;
-	padding-top: 2em;
-}
 #getBookIcons {
 	text-align: center;
 }
@@ -140,4 +137,10 @@ img.shoppingIcons {
 }
 .partnerLogo {
 	margin-top: 2em;
+}
+span#bodyText p:first-child {
+  padding-top: 25px;
+}
+span#bodyText p {
+  font-size: 16px;
 }
