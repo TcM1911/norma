@@ -101,7 +101,7 @@ color: #C0C0C0;
 }
 .dropdown-menu,
 open {
-	background-color: rgba(163, 163, 163, 0.8);
+	background-color: rgba(163, 163, 163, 1);
 }
 .dropdown-menu > li > a {
 	color: black;
