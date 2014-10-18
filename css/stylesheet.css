@@ -73,7 +73,16 @@ li.active {
 .navbar-default .navbar-nav>.active>a:focus {
 	background-color: rgba(0, 0, 0, .000001);
 	background-image: none;
-	color: #b4b4b4;
+	color: #FFFFFF;
+}
+.navbar-nav>li>a {
+	text-shadow: none;
+}
+.navbar-default .navbar-nav>li>a {
+color: #C0C0C0;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #333;
 }
 #titleSpace {
 	text-align: center;
@@ -84,11 +93,14 @@ li.active {
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
-	background-color: rgba(0, 0, 0, 0.0001);
+	/*background-color: rgba(0, 0, 0, 0.0001);*/
+	background-color: transparent;
+	background-repeat: none;
+	background-image: none;
 }
 .dropdown-menu,
 open {
-	background-color: rgba(163, 163, 163, 0.95);
+	background-color: rgba(163, 163, 163, 0.8);
 }
 .dropdown-menu > li > a {
 	color: black;
