@@ -1,14 +1,17 @@
 
 			<div class="col-sm-12">
-				<h2 class="specialFont text-center"><%= tagline %></h2>
+				<!-- <h2 class="specialFont text-center"><%= tagline %></h2> -->
 			</div>
-			<div class="row">
+			<div id="bookDescription" class="row">
 			  <!--<div class="col-sm-1"></div>-->
 				<div class="col-sm-6">
-					<img class="center-block mainpageCoverArt img-responsive" src="<%= cover %>">
+					<h2 class="specialFont text-center"><%= tagline %></h2>
+					<div id="divCover">
+						<img id="bookCover" class="center-block img-responsive" src="<%= cover %>">
+			  		</div>
 				</div>
 				
-				<div class="col-sm-6">
+				<div id="divBookText" class="col-sm-6">
 					<span id="bodyText"> <%= body %> </span>
 					<div id="getBookIcons">
 					<% if(azActive) {%>

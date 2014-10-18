@@ -48,6 +48,7 @@ img#celticKnot {
 }
 .specialFont {
 	font-family: AquilineTwo;
+	padding-bottom: 1em;
 }
 .MainSite {
 	background-color: #efefef;
@@ -149,4 +150,9 @@ span#bodyText p:first-child {
 }
 span#bodyText p {
   font-size: 16px;
+}
+/* Shinking the conent area*/
+#menu {
+	padding-left: 0;
+	padding-right: 0;
 }
