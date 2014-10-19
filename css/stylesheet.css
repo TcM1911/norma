@@ -49,6 +49,7 @@ img#celticKnot {
 .specialFont {
 	font-family: AquilineTwo;
 	padding-bottom: 1em;
+	line-height: 2;
 }
 .MainSite {
 	background-color: #efefef;
@@ -89,6 +90,7 @@ color: #C0C0C0;
 }
 #title {
 	padding-bottom: 15px;
+	padding-top: 15px;
 }
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
