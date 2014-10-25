@@ -11,8 +11,9 @@ define([
 'views/book',
 'views/contact',
 'views/partner',
-'views/mailinglist'
-], function ($, _, Backbone, MenuView, AboutView, IndexView, BooksView, BookView, ContactView, PartnerView, MailinglistView) {
+'views/mailinglist',
+'views/series'
+], function ($, _, Backbone, MenuView, AboutView, IndexView, BooksView, BookView, ContactView, PartnerView, MailinglistView, SeriesView) {
 	// Backbone router
 	var menuView = new MenuView();
 	var AppRouter = Backbone.Router.extend({
@@ -20,10 +21,12 @@ define([
 		routes: {
 			"": "showIndex",
 			'about': 'showAbout',
-			'books': 'showBooks',
-			'book/:id': 'showBook',
+			'showAllBooks': 'showBooks',
+			// 'book/:id': 'showBook',
 			'contact': 'showContact',
-			'partner': 'showPartner'
+			'partner': 'showPartner',
+			':id': 'showSeries',
+			':id/:bookid': 'showBook'
 		},
 		showIndex: function () {
 			var indexView = new IndexView();
@@ -40,9 +43,14 @@ define([
 			booksView.render();
 			menuView.activateItem('#Books');
 		},
-		showBook: function (id) {
+		showSeries: function (id) {
+			var seriesView = new SeriesView();
+			seriesView.render(id);
+			menuView.activateItem('#Books');
+		},
+		showBook: function (id, bookid) {
 			var bookView = new BookView();
-			bookView.render(id);
+			bookView.render(id, bookid);
 			menuView.activateItem('#Books');
 		},
 		showContact: function () {
