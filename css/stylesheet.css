@@ -9,6 +9,10 @@ body {
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Author';
+	src: url('../fonts/author.ttf');
+}
 #foot-spacer {
 	width: 100%;
 	height: 20px
@@ -46,12 +50,16 @@ img#celticKnot {
 	margin-top: auto;
 	padding-top: 1em;
 }
-/*Tagline font*/
+/*Special font*/
 .specialFont-blackness {
 	font-family: AquilineTwo;
 	padding-bottom: 1em;
 	line-height: 2;
 }
+.specialFont-author {
+	font-family: Author;
+}
+
 /*End tagline font*/
 
 .MainSite {
