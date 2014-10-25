@@ -10,12 +10,12 @@ define([
 ], function ($, _, Backbone, BookTemplate, BooksCollection) {
 	var BookView = Backbone.View.extend({
 	  el: $('#content'),
-	  render: function(bookId) {
+	  render: function(seriesId, bookId) {
 	    var that = this;
 	    var books = new BooksCollection();
 	    books.fetch({
 	      success: function(books) {
-	        var book = books.get(bookId);
+	      	var book = books.get(bookId);
 	        data = {
 	          tagline: book.get('tagline'),
 	          cover: book.get('cover'),
@@ -25,7 +25,8 @@ define([
 	          googleLink: book.get('googlePlayLink'),
 	          azActive: book.get('amazonActive'),
 	          nookActive: book.get('nookActive'),
-	          googleActive: book.get('googleActive')
+	          googleActive: book.get('googleActive'),
+	          seriesId: seriesId
 	        };
 	        
 	        // Generate the page from the template.

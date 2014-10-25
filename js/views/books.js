@@ -17,10 +17,14 @@ define([
 		    success: function(books) {
 		      // Get all cover links
 		      var coverLinks = [];
+		      var bookURL = [];
 		      books.each(function(book, i) {
 		        coverLinks[i] = book.get('cover');
+		        var series = (book.get('series') !== false) ? book.get('series') : "standalone";
+		        var id = book.get('id');
+		        bookURL[i] = series + "/" + id;
 		      });
-	        var Template = _.template(BooksTemplate, {coverLinks: coverLinks});
+	        var Template = _.template(BooksTemplate, {coverLinks: coverLinks, bookURL: bookURL});
 		    	that.$el.html(Template);
 		    }
 		  });

@@ -1,7 +1,8 @@
 [
   {
-    "id": 1,
+    "id": "BTO",
     "published": true,
+    "series": "blackness",
     "title": "Blackness Takes Over",
     "tagline": "She met him on Saturday, by Tuesday her life would never be the same...",
     "cover": "../img/BlacknessTakesOver.jpg",
@@ -14,8 +15,9 @@
     "googleActive": true
   },
   {
-    "id": 2,
+    "id": "BA",
     "published": true,
+    "series": "blackness",
     "title": "Blackness Awaits",
     "tagline": "As he enters the room looking like death personified, lifeless and haunting, she knows...blackness awaits.",
     "cover": "../img/BlacknessAwaits.jpg",
@@ -28,8 +30,9 @@
     "googleActive": true
   },
   {
-    "id": 3,
+    "id": "SIB",
     "published": true,
+    "series": "blackness",
     "title": "Shrouded in Blackness",
     "tagline": "Only loyalty can win his heart...",
     "cover": "../img/ShroudedinBlankness.jpg",
@@ -42,8 +45,9 @@
     "googleActive": false
   },
     {
-    "id": 4,
+    "id": "ITB",
     "published": true,
+    "series": "blackness",
     "title": "Into the Blackness",
     "tagline": "Cease being everything you’re trained to be in order to find who you’re meant to be...with.",
     "cover": "../img/ITB.jpg",
@@ -56,8 +60,9 @@
     "googleActive": true
   },
     {
-    "id": 5,
+    "id": "BW",
     "published": true,
+    "series": "blackness",
     "title": "Blackness Within",
     "tagline": "Fighting to find his worthy place in life...",
     "cover": "../img/BW.jpg",

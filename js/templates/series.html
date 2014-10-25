@@ -1,8 +1,5 @@
-	<h1 class="text-center">Norma Jeanne Karlsson's Novels</h1>
-<span id="bodyText">
-<p class="text-center">Welcome the the worlds created by Norma Jeanne. While the characters and settings change, you will always find stories of
-perseverance, unconventional families and love.</p><p class="text-center">Happy Reading!</p>
-</span>
+	<h1 class="text-center"><%=seriesTitle%></h1>
+<span id="bodyText"><%=seriesDescription%></span>
 <div class="center-block row" id="bookCovers">
 	  <% for (i=0; i<coverLinks.length; i++){ %>
 	  
@@ -30,7 +27,7 @@ perseverance, unconventional families and love.</p><p class="text-center">Happy 
 	     <%}%>
 	    <%}%>
 	  <% } %>
-		<a href="#<%= bookURL[i] %>">
+		<a href="#series/<%=seriesId%>/<%=bookId[i]%>">
 			<img class="img-responsive center-block coverImage" src="<%=coverLinks[i]%>">
 		</a>
 	</div>
