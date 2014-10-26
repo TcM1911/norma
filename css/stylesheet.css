@@ -63,6 +63,12 @@ img#celticKnot {
 .specialFont-author {
 	font-family: Author;
 }
+h1.specialFont-author {
+	font-size: 48px;
+}
+h2.specialFont-author {
+	font-size: 42px;
+}
 .specialFont-MOL {
 	font-family: MOL;
 	font-size: 48px;
