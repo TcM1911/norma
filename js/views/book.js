@@ -26,7 +26,9 @@ define([
 	          azActive: book.get('amazonActive'),
 	          nookActive: book.get('nookActive'),
 	          googleActive: book.get('googleActive'),
-	          seriesId: seriesId
+	          seriesId: (seriesId === "standalone") ? bookId : seriesId,
+	          published: book.get('published'),
+	          release: book.get('release')
 	        };
 	        
 	        // Generate the page from the template.

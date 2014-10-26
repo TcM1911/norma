@@ -13,6 +13,9 @@
 				
 				<div id="divBookText" class="col-sm-6">
 					<span id="bodyText"> <%= body %> </span>
+					<% if(!published) { %>
+						<p style="font-size: 22px;">Release: <em><%=release%></em></p>
+					<% } %>
 					<div id="getBookIcons">
 					<% if(azActive) {%>
 						<a href="<%=azLink%>" target="_blank">

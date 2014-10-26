@@ -17,33 +17,61 @@ define([
 		  var Series = new SeriesCollection();
 		  Series.fetch({
 		  	success: function(Series) {
-		  		// Get series information
-		  		var series = Series.get(SeriesId);
-		  		var title = series.get('title');
-		  		var description = series.get('description');
-		  		
-		  		// Get book covers in the series
-		  		books.fetch({
-				    success: function(books) {
-				      var coverLinks = [];
-				      var bookId = [];
-				      _.each(
-				      		books.filter(function(book) {
-					      		return book.get("series") === SeriesId; }),
-					      	function(book, i) {
-				        		coverLinks[i] = book.get('cover');
-				        		bookId[i] = book.get('id');
-				      });
-			        var Template = _.template(SeriesTemplate, {
-			        	coverLinks: coverLinks,
-			        	bookId: bookId,
-			        	seriesId: SeriesId,
-			        	seriesTitle: title,
-			        	seriesDescription: description
-			        	});
-				    	that.$el.html(Template);
-				    }
-				  });
+
+		  		if (SeriesId === "standalone") {
+		  			var title = "Standalone Novels";
+		  			var description = "";
+		  			books.fetch({
+					    success: function(books) {
+					      var coverLinks = [];
+					      var bookId = [];
+					      _.each(
+					      		books.filter(function(book) {
+						      		return book.get("series") === false; }),
+						      	function(book, i) {
+					        		coverLinks[i] = book.get('cover');
+					        		bookId[i] = book.get('id');
+					      });
+				        var Template = _.template(SeriesTemplate, {
+				        	coverLinks: coverLinks,
+				        	bookId: bookId,
+				        	seriesId: SeriesId,
+				        	seriesTitle: title,
+				        	seriesDescription: description
+				        	});
+					    	that.$el.html(Template);
+					    }
+					});
+
+		  		} else {
+			  		// Get series information
+			  		var series = Series.get(SeriesId);
+			  		var title = series.get('title');
+			  		var description = series.get('description');
+			  		
+			  		// Get book covers in the series
+			  		books.fetch({
+					    success: function(books) {
+					      var coverLinks = [];
+					      var bookId = [];
+					      _.each(
+					      		books.filter(function(book) {
+						      		return book.get("series") === SeriesId; }),
+						      	function(book, i) {
+					        		coverLinks[i] = book.get('cover');
+					        		bookId[i] = book.get('id');
+					      });
+				        var Template = _.template(SeriesTemplate, {
+				        	coverLinks: coverLinks,
+				        	bookId: bookId,
+				        	seriesId: SeriesId,
+				        	seriesTitle: title,
+				        	seriesDescription: description
+				        	});
+					    	that.$el.html(Template);
+					    }
+					});
+		  		}
 		  	}
 		  })
 		}

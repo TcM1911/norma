@@ -13,6 +13,10 @@ body {
 	font-family: 'Author';
 	src: url('../fonts/author.ttf');
 }
+@font-face {
+	font-family: 'MOL';
+	src: url('../fonts/James_Fajardo.ttf');
+}
 #foot-spacer {
 	width: 100%;
 	height: 20px
@@ -58,6 +62,10 @@ img#celticKnot {
 }
 .specialFont-author {
 	font-family: Author;
+}
+.specialFont-MOL {
+	font-family: MOL;
+	font-size: 48px;
 }
 
 /*End tagline font*/
