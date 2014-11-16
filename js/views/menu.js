@@ -59,10 +59,10 @@ define([
 					    	}
 					    });
 
-					    // Adding comming titles
+					    // Adding coming titles
 					    if(books.some(function(book) { return book.get('published') === false})) {
 					    	Template += '<li class="divider"></li>';
-					    	Template += '<li class="dropdown-submenu dropdown-mouseover menuItem"><a>Comming Soon</a><ul class="dropdown-menu dropdown-mouseover" role="menu">';
+					    	Template += '<li class="dropdown-submenu dropdown-mouseover menuItem"><a>Coming Soon</a><ul class="dropdown-menu dropdown-mouseover" role="menu">';
 						    books.each(function(book, j) {
 						    	if(!book.get('published')) {
 						    		var bookId = book.get('id');
