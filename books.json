@@ -12,7 +12,9 @@
     "googlePlayLink": "https://play.google.com/store/books/details/Karlsson_Norma_Jeanne_Blackness_Takes_Over?id=NmSAAgAAQBAJ",
     "amazonActive": true,
     "nookActive": true,
-    "googleActive": true
+    "googleActive": true,
+    "goodreads": "https://www.goodreads.com/book/show/20438956-blackness-takes-over",
+    "goodreadsActive": true
   },
   {
     "id": "BA",
@@ -27,7 +29,9 @@
     "googlePlayLink": "https://play.google.com/store/books/details/Karlsson_Norma_Jeanne_Blackness_Awaits?id=K7FYAwAAQBAJ",
     "amazonActive": true,
     "nookActive": true,
-    "googleActive": true
+    "googleActive": true,
+    "goodreads": "https://www.goodreads.com/book/show/21902042-blackness-awaits",
+    "goodreadsActive": true
   },
   {
     "id": "SIB",
@@ -42,7 +46,9 @@
     "googlePlayLink": "",
     "amazonActive": true,
     "nookActive": false,
-    "googleActive": false
+    "googleActive": false,
+    "goodreads": "https://www.goodreads.com/book/show/22059176-shrouded-in-blackness",
+    "goodreadsActive": true
   },
     {
     "id": "ITB",
@@ -57,7 +63,9 @@
     "nookLink": "http://www.barnesandnoble.com/w/into-the-blackness-norma-jeanne-karlsson/1120153627?ean=9780991187362&itm=1&usri=norma+jeanne+karlsson",
     "nookActive": true,
     "googlePlayLink": "https://play.google.com/store/books/details/Norma_Jeanne_Karlsson_Into_the_Blackness?id=fsxjBAAAQBAJ",
-    "googleActive": true
+    "googleActive": true,
+    "goodreads": "https://www.goodreads.com/book/show/22745972-into-the-blackness",
+    "goodreadsActive": true
   },
     {
     "id": "BW",
@@ -72,12 +80,14 @@
     "nookLink": "http://www.barnesandnoble.com/w/blackness-within-norma-jeanne-karlsson/1120419103?ean=9781634617291",
     "nookActive": true,
     "googlePlayLink": "https://play.google.com/store/books/details/Norma_Jeanne_Karlsson_Blackness_Within?id=a9CgBAAAQBAJ&hl=en",
-    "googleActive": true
+    "googleActive": true,
+    "goodreads": "https://www.goodreads.com/book/show/23124245-blackness-within",
+    "goodreadsActive": true
   },
   {
     "id": "MOL",
     "published": false,
-    "release": "December 22th, 2014",
+    "release": "December 22nd",
     "series": false,
     "title": "Mugs of Love",
     "tagline": "Serving promise, one cup at a time.",
@@ -88,7 +98,9 @@
     "nookLink": "",
     "nookActive": false,
     "googlePlayLink": "",
-    "googleActive": false
+    "googleActive": false,
+    "goodreads": "https://www.goodreads.com/book/show/23448227-mugs-of-love",
+    "goodreadsActive": true
   },
   {
     "id": "MM",
@@ -104,7 +116,9 @@
     "nookLink": "",
     "nookActive": false,
     "googlePlayLink": "",
-    "googleActive": false
+    "googleActive": false,
+    "goodreads": "https://www.goodreads.com/book/show/23636494-misunderstood-miracles",
+    "goodreadsActive": true
   },
   {
     "id": "ETB",
@@ -120,6 +134,8 @@
     "nookLink": "",
     "nookActive": false,
     "googlePlayLink": "",
-    "googleActive": false
+    "googleActive": false,
+    "goodreads": "https://www.goodreads.com/book/show/23636683-escaping-the-blackness",
+    "goodreadsActive": true
   }
 ]

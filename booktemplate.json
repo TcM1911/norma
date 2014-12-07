@@ -8,9 +8,11 @@
     "cover": "../img/.jpg",
     "body": "",
     "amazonLink": "",
-    "amazonActive": true,
+    "amazonActive": false,
     "nookLink": "",
     "nookActive": false,
     "googlePlayLink": "",
-    "googleActive": false
+    "googleActive": false,
+    "goodreads": "",
+    "goodreadsActive": false
   }
