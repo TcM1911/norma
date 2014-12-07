@@ -17,6 +17,10 @@ body {
 	font-family: 'MOL';
 	src: url('../fonts/James_Fajardo.ttf');
 }
+@font-face {
+	font-family: 'MN';
+	src: url('../fonts/EBGARAMOND.OTF');
+}
 #foot-spacer {
 	width: 100%;
 	height: 20px
@@ -72,6 +76,10 @@ h2.specialFont-author {
 .specialFont-MOL {
 	font-family: MOL;
 	font-size: 48px;
+}
+.specialFont-MN {
+	font-size: 48px;
+	font-family: MN;
 }
 
 /*End tagline font*/

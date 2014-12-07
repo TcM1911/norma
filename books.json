@@ -89,5 +89,21 @@
     "nookActive": false,
     "googlePlayLink": "",
     "googleActive": false
+  },
+  {
+    "id": "MM",
+    "series": false,
+    "published": false,
+    "release": "December 2014",
+    "title": "Misunderstood Miracles",
+    "tagline": "The small things are never what they appear to be... ",
+    "cover": "../img/MM.jpg",
+    "body": "<p>Isolation is important when you’re different. Thirty years of protecting himself ends with one blast intended to end his life. The explosion happened. The building collapsed. Kane Rand walked away. He always walks away, which is why they want him.</p><p>They can try to shoot him, stab him, set him on fire or anything else they can come up with to subdue the mob enforcer. It won’t work. Kane is impenetrable. His skin keeps him safe while his cunning mind and deadly skills keep him alive.</p><p>There’s nothing to protect his heart.</p><p>Alannah Carey steals his unprotected soft spot with one look. Now he’s in the fight of his life to keep her safe, his family alive and himself out of the hands of an agency that’s been trying to capture him from the time he was born.</p><p>The miracle of life soon becomes a tortured cell where survival is the only option.</p><p>Or in Kane’s case, a breeding ground for vengeance. (less)</p>",
+    "amazonLink": "",
+    "amazonActive": false,
+    "nookLink": "",
+    "nookActive": false,
+    "googlePlayLink": "",
+    "googleActive": false
   }
 ]
