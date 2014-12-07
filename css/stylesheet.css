@@ -21,6 +21,10 @@ body {
 	font-family: 'MN';
 	src: url('../fonts/EBGARAMOND.OTF');
 }
+@font-face {
+	font-family: 'Cooper';
+	src: url('../fonts/ALFASLABONE-REGULAR.TTF');
+}
 #foot-spacer {
 	width: 100%;
 	height: 20px
@@ -63,6 +67,9 @@ img#celticKnot {
 	font-family: AquilineTwo;
 	padding-bottom: 1em;
 	line-height: 2;
+}
+.specialFont-cooperbrothers {
+	font-family: Cooper;
 }
 .specialFont-author {
 	font-family: Author;
