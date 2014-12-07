@@ -67,7 +67,7 @@ define([
 						    	if(!book.get('published')) {
 						    		var bookId = book.get('id');
 						    		var title = book.get('title');
-						    		var url = "#standalone/" + bookId;
+						    		var url = (!book.get('series')) ? "#standalone/" + bookId : "#" + book.get('series') + "/" + bookId;
 						    		Template += '<li><a href="' + url +'">' + title + '</a></li>';
 						    	}
 						    	// Adding closing <li> to submenu
